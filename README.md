@@ -15,7 +15,8 @@ To install the required modules, run:
 
     pip3 install cryptography colorama
 
-Usage
+## Usage
+
 Encrypting a File
 
 To encrypt a file, use the following command:
