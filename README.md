@@ -1,4 +1,4 @@
-# Vortex
+# vortex
 
 Vortex is a file encryption and decryption tool using the AES algorithm, created by the JRDP team. It allows for generating passwords of specified length and characters, as well as using custom passwords.
 
