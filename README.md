@@ -7,9 +7,8 @@ vortex is a file encryption and decryption tool that uses AES-256. It provides s
 1. Clone or download the source code to your local machine.
 2. Install the required libraries:
 
-    ```bash
-    pip3 install cryptography colorama
-    ```
+       pip3 install cryptography colorama
+
 
 ## Usage
 
@@ -17,9 +16,8 @@ vortex is a file encryption and decryption tool that uses AES-256. It provides s
 
 To encrypt a file, use the `-e` option. You must specify the password length (`-l`) and the character set (`-t`) for password generation.
 
-    ```bash
+
     python3 vortex.py -f <file_path> -e -l <password_length> -t <chars>
-    ```
 
 **Options:**
 
@@ -30,17 +28,15 @@ To encrypt a file, use the `-e` option. You must specify the password length (`-
 
 Example:
 
-    ```bash
     python3 vortex.py -f example.txt -e -l 12 -t letter number extra
-    ```
+
 
 ### Decrypting a File
 
 To decrypt a file, use the `-d` option. You will be prompted to enter the password.
 
-    ```bash
     python3 vortex.py -f <file_path> -d
-    ```
+
 
 **Options:**
 
