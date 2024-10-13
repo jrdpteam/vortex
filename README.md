@@ -45,9 +45,8 @@ To decrypt a file, use the `-d` option. You will be prompted to enter the passwo
 
 Example:
 
-    ```bash
     python3 vortex.py -f example.txt.vrtx -d
-    ```
+
 
 ## Contact
 
