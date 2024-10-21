@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex v3.0 Usage Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        pre {
+            display: inline-block;
+            color: red;
+            background-color: #333333;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+        code {
+            font-family: "Courier New", monospace;
+            color: #d63384;
+        }
+        .command {
+            color: #1cf50c;
+            background-color: black;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .comment {
+            color: red;
+        }
+        .copy-btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .copy-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vortex v3.0 - Usage Examples</h1>
+    
+    <h2>Encrypting a File</h2>
+    <pre>
+        <code class="command">
+            python3 vortex.py -f example.txt -e -l 16 -t letter number extra
+        </code>
+    </pre>
+    <p>This command will encrypt the file <code>example.txt</code> using a generated password with a length of 16 characters, including letters, numbers, and special characters (_ and -).</p>
+
+    <h2>Decrypting a File</h2>
+    <pre>
+        <code class="command">
+            python3 vortex.py -f example.txt.vrtx -d
+        </code>
+    </pre>
+    <p>This command will decrypt the encrypted file <code>example.txt.vrtx</code>. You will be prompted to enter the password used during encryption.</p>
+
+    <h2>Encrypting with a Custom Password</h2>
+    <pre>
+        <code class="command">
+            python3 vortex.py -f example.txt -e -c "MyCustomPassword123!"
+        </code>
+    </pre>
+    <p>Encrypt the file <code>example.txt</code> using a custom password <code>MyCustomPassword123!</code>.</p>
+
+    <h2>Decrypting with a Custom Password</h2>
+    <pre>
+        <code class="command">
+            python3 vortex.py -f example.txt.vrtx -d -c "MyCustomPassword123!"
+        </code>
+    </pre>
+    <p>Decrypt the file <code>example.txt.vrtx</code> using the custom password <code>MyCustomPassword123!</code>.</p>
+
+    <h2>Viewing Help</h2>
+    <pre>
+        <code class="command">
+            python3 vortex.py -h
+        </code>
+    </pre>
+    <p>This command displays the help menu with all available options.</p>
+
+    <button class="copy-btn" onclick="copyText()">Copy Command</button>
+
+    <script>
+        function copyText() {
+            const codeBlocks = document.querySelectorAll('code.command');
+            codeBlocks.forEach(block => {
+                const text = block.innerText;
+                navigator.clipboard.writeText(text);
+                alert('Command copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>
