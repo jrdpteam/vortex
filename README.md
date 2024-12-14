@@ -12,12 +12,15 @@ vortex is a file encryption and decryption tool that uses AES-256. It provides s
 
 ## Usage
 
+Run `installer.py` and follow installation steps(there is only one step :>)
+now,vortex is available everywhere on your OS.
+
 ### Encrypting a File
 
 To encrypt a file, use the `-e` option. You must specify the password length (`-l`) and the character set (`-t`) for password generation.
 
 
-    python3 vortex.py -f <file_path> -e -l <password_length> -t <chars>
+    vortex -f <file_path> -e -l <password_length> -t <chars>
 
 **Options:**
 
@@ -28,14 +31,14 @@ To encrypt a file, use the `-e` option. You must specify the password length (`-
 
 Example:
 
-    python3 vortex.py -f example.txt -e -l 12 -t letter number extra
+     vortex -f example.txt -e -l 12 -t letter number extra
 
 
 ### Decrypting a File
 
 To decrypt a file, use the `-d` option. You will be prompted to enter the password.
 
-    python3 vortex.py -f <file_path> -d
+    vortex -f <file_path> -d
 
 
 **Options:**
@@ -45,7 +48,7 @@ To decrypt a file, use the `-d` option. You will be prompted to enter the passwo
 
 Example:
 
-    python3 vortex.py -f example.txt.vrtx -d
+    vortex -f example.txt.vrtx -d
 
 
 ## Contact
