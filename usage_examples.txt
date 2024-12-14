@@ -1,0 +1,25 @@
+python3 vortex.py -f file.png -l 64 -t letter number extra -e
+
+python3 vortex.py -f file.png -c "my_secret_password" -e
+
+python3 vortex.py -f file.png.vrtx -d
+
+python3 vortex.py -f example.txt -e -l 16 -t letter number extra
+
+python3 vortex.py -f example.txt -e -c "my_secret_password"
+
+python3 vortex.py -f example.txt.vrtx -d
+
+Or for installed version:
+
+vortex -f file.png -l 64 -t letter number extra -e
+
+vortex -f file.png -c "my_secret_password" -e
+
+vortex -f file.png.vrtx -d
+
+vortex -f example.txt -e -l 16 -t letter number extra
+
+vortex -f example.txt -e -c "my_secret_password"
+
+vortex -f example.txt.vrtx -d
