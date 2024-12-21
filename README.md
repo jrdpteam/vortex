@@ -1,4 +1,4 @@
-# vortex
+# vortex v3.2
 
 vortex is a file encryption and decryption tool that uses AES-256. It provides strong password generation and management, with a simple command-line interface.
 
